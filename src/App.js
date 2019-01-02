@@ -1,20 +1,23 @@
 import React, {Component} from 'react';
 import './App.css';
+import Panel from "./componets/Panel";
 
 class App extends Component {
 
     render() {
         return (
-            <div className="App">
-                <header className="App-header">
-                    <img src={require('./background.png')} style={{animation: 'App-logo-spin infinite 20s linear',
-                    align:'center'}}/>
-                    <h1 style={{align:'center'}}>12:30</h1>
-                </header>
+            <div style={{flex: 1, flexDirection: 'row'}}>
+                <div style={{flex: 3, flexDirection: 'column', alignItem: 'center', justifyContent: 'center'}}>
+                    <div style={{flex:1, background: 'yellow'}} />
+                    <Panel style={{flex: 1}} color={'black'}/>
+                    <Panel style={{flex: 15}} color={'green'}/>
+                    <Panel style={{flex: 1}} color={'black'}/>
+                </div>
+                <div style={{flex: 3, flexDirection: 'row', alignItem: 'center', justifyContent: 'center'}}>
+                    <Panel style={{flex: 1}} color={'red'}/>
+                </div>
             </div>
-
-        )
-            ;
+        );
     }
 }
 
