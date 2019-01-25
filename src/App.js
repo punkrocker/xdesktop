@@ -8,12 +8,14 @@ class App extends Component {
         return (
             <div style={{display: 'flex', flexDirection: 'column', height: 1080}}>
                 <div style={{display: 'flex', flex: 3, justifyContent: 'flex-start', alignItems: 'stretch', alignContent: 'stretch'}}>
-                    <Panel style={{flex: 1}} color={'black'}/>
-                    <Panel style={{flex: 5}} color={'green'}/>
-                    <Panel style={{flex: 1}} color={'black'}/>
+                    <Panel color={'yellow'} flex={1}/>
+                    <Panel color={'green'} flex={3}/>
+                    <Panel color={'yellow'} flex={1}/>
                 </div>
-                <div style={{display: 'flex', flex: 1, background: 'yellow'}}>
-                    <Panel style={{flex: 1}} color={'red'}/>
+                <div style={{display: 'flex', flex: 1, background: 'yellow', justifyContent:'center'}}>
+                    <Panel color={'red'} flex={1}/>
+                    <Panel color={'blue'} flex={3}/>
+                    <Panel color={'red'} flex={1}/>
                 </div>
             </div>
         );
