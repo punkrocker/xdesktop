@@ -8,7 +8,8 @@ class App extends Component {
         return (
             <div style={{display: 'flex', flexDirection: 'column', height: 1080}}>
                 <div style={{display: 'flex', flex: 3, justifyContent: 'flex-start', alignItems: 'stretch', alignContent: 'stretch'}}>
-                    <Panel color={'yellow'} flex={1}/>
+                    <Panel color={'yellow'} flex={1}>
+                    </Panel>
                     <Panel color={'green'} flex={3}/>
                     <Panel color={'yellow'} flex={1}/>
                 </div>
