@@ -4,7 +4,8 @@ class Panel extends Component {
 
     render() {
         return (
-            <div style={{background: this.props.color, flex: this.props.flex}} />
+            <div style={{background: this.props.color, flex: this.props.flex}}>
+            </div>
         );
     }
 }
