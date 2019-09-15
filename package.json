@@ -4,6 +4,8 @@
   "private": true,
   "main": "main.js",
   "dependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
     "electron": "^6.0.9",
     "react": "^16.9.0",
     "react-dom": "^16.6.3",
@@ -25,5 +27,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "ts-loader": "^6.1.0"
+  }
 }
