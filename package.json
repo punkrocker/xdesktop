@@ -2,7 +2,7 @@
   "name": "xdesktop",
   "version": "0.1.0",
   "private": true,
-  "main": "main.ts",
+  "main": "main.js",
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
