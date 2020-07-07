@@ -6,7 +6,7 @@
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
-    "electron": "^6.0.10",
+    "electron": "^9.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
