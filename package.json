@@ -6,7 +6,6 @@
   "dependencies": {
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
-    "electron": "^6.0.10",
     "react": "^16.9.0",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1",
@@ -16,7 +15,9 @@
     "start": "react-scripts start & electron .",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,6 +29,15 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "ts-loader": "^6.1.0"
+    "electron": "^21.1.1",
+    "ts-loader": "^6.1.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.healai.desktop",
+    "mac": {
+      "category": "heal.tool"
+    },
+    "extends": null
   }
 }
