@@ -1,5 +1,7 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
+const url = require("url");
+const path = require("path");
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -7,13 +9,18 @@ let mainWindow
 
 function createWindow() {
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 800, height: 600})
-    mainWindow.setFullScreen(true)
+    mainWindow = new BrowserWindow({width: 240, height: 800})
+    mainWindow.setFullScreen(false)
     mainWindow.setMovable(true)
     mainWindow.menuBarVisible = false
 
     // and load the index.html of the app.
-    mainWindow.loadURL('https://med.healai.com/mentalReact/entry?gID=2022101800004&hID=')
+    mainWindow.loadURL('http://localhost:3000')
+    // mainWindow.loadURL(url.format({
+    //     pathname: path.join(__dirname, 'index.html'),
+    //     protocol: 'file:',
+    //     slashes: true
+    // }))
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools()
