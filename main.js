@@ -9,7 +9,7 @@ let mainWindow
 
 function createWindow() {
     // Create the browser window.
-    mainWindow = new BrowserWindow({width: 240, height: 800})
+    mainWindow = new BrowserWindow({width: 240, height: 800, alwaysOnTop: true})
     mainWindow.setFullScreen(false)
     mainWindow.setMovable(true)
     mainWindow.menuBarVisible = false
