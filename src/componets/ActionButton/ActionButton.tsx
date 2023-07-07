@@ -1,20 +1,24 @@
 import React, {Component} from 'react';
 import './ActionButton.css';
 
-class ActionButton extends Component {
+class ActionButton extends Component{
+    static defaultProps = {
+        uri: '',
+        icon: 'icon-holder.png',
+        title: 'Test'
+    };
 
-    constructor() {
-        // @ts-ignore
-        super();
+    props = {
+        uri: '',
+        icon: 'icon-holder.png',
+        title: 'Test'
     }
-
-    props = {}
 
     render() {
         return (
             <div className={'Button'}>
-                <img src={require('../../images/icon-holder.png')} alt={'plus'} className={'Icon'}/>
-                <text>Hello</text>
+                <img src={require(`../../icons/${this.props.icon}`)} alt={'plus'} className={'Icon'}/>
+                <text>{this.props.title}</text>
             </div>
         );
     }

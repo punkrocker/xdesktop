@@ -6,7 +6,7 @@ class App extends Component {
 
     render() {
         return (
-            <div style={{display: 'flex', flexDirection: 'column', height: 1080}}>
+            <div style={{display: 'flex', flexDirection: 'column'}}>
                 <QuickAction  />
             </div>
         );
