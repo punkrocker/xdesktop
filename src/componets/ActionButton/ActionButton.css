@@ -1,0 +1,14 @@
+.Button {
+    width: 64px;
+    height: 64px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Icon {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
