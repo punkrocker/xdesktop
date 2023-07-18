@@ -13,6 +13,7 @@ function createWindow() {
     mainWindow.setFullScreen(false)
     mainWindow.setMovable(true)
     mainWindow.menuBarVisible = false
+    mainWindow.setTitle("GYL3001")
 
     // and load the index.html of the app.
     mainWindow.loadURL('http://localhost:3000')
